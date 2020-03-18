@@ -7,7 +7,7 @@
 //
 
 #import "SecoundViewController.h"
-#import "NSObject+Theme.h"
+#import "DDThemeKit.h"
 
 @interface SecoundViewController ()
 
@@ -40,13 +40,14 @@
 //        block();
 //    }];
     
-    AddThemeProvider(self, ^(DDTraitCollection * _Nonnull traitCollection) {
-        if (traitCollection.userInterfaceStyle == DDUserInterfaceStyleLight) {
-            self.view.backgroundColor = [UIColor whiteColor];
-        } else {
-            self.view.backgroundColor = [UIColor blackColor];
-        }
+    AddThemeProvider(self, ^{
+        self.view.backgroundColor = [DDDynamicColor cardBgColor];
     });
+    
+    AddThemeProviderWithTraitCollection(self, ^(DDTraitCollection *traitCollection) {
+        
+    });
+    
 }
 
 - (void)add_themeBlock:(void (^)(void))block {

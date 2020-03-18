@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6204E0472421C9A500FD5B40 /* DDDynamicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204E0462421C9A500FD5B40 /* DDDynamicColor.m */; };
+		6204E04A2421D3F900FD5B40 /* DDDynamicImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204E0492421D3F900FD5B40 /* DDDynamicImage.m */; };
 		621F8BEF241B3D7800F58EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F8BEE241B3D7800F58EBF /* AppDelegate.m */; };
 		621F8BF2241B3D7900F58EBF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F8BF1241B3D7900F58EBF /* SceneDelegate.m */; };
 		621F8BF5241B3D7900F58EBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F8BF4241B3D7900F58EBF /* ViewController.m */; };
@@ -21,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6204E0442421C65400FD5B40 /* DDThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDThemeKit.h; sourceTree = "<group>"; };
+		6204E0452421C9A500FD5B40 /* DDDynamicColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDDynamicColor.h; sourceTree = "<group>"; };
+		6204E0462421C9A500FD5B40 /* DDDynamicColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDDynamicColor.m; sourceTree = "<group>"; };
+		6204E0482421D3F900FD5B40 /* DDDynamicImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDDynamicImage.h; sourceTree = "<group>"; };
+		6204E0492421D3F900FD5B40 /* DDDynamicImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDDynamicImage.m; sourceTree = "<group>"; };
 		621F8BEA241B3D7800F58EBF /* DDThemeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDThemeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		621F8BED241B3D7800F58EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		621F8BEE241B3D7800F58EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +107,11 @@
 				6228B96C241F647200CFC0E6 /* DDThemeManager.m */,
 				621F8C0D241B3E2100F58EBF /* DDTraitCollection.h */,
 				621F8C0E241B3E2100F58EBF /* DDTraitCollection.m */,
+				6204E0442421C65400FD5B40 /* DDThemeKit.h */,
+				6204E0452421C9A500FD5B40 /* DDDynamicColor.h */,
+				6204E0462421C9A500FD5B40 /* DDDynamicColor.m */,
+				6204E0482421D3F900FD5B40 /* DDDynamicImage.h */,
+				6204E0492421D3F900FD5B40 /* DDDynamicImage.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -181,7 +193,9 @@
 				621F8BEF241B3D7800F58EBF /* AppDelegate.m in Sources */,
 				621F8C0F241B3E2100F58EBF /* DDTraitCollection.m in Sources */,
 				621F8C00241B3D7B00F58EBF /* main.m in Sources */,
+				6204E04A2421D3F900FD5B40 /* DDDynamicImage.m in Sources */,
 				621F8BF2241B3D7900F58EBF /* SceneDelegate.m in Sources */,
+				6204E0472421C9A500FD5B40 /* DDDynamicColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

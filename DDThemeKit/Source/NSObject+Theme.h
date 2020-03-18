@@ -46,7 +46,8 @@ typedef void (^DDThemeProvider)(DDTraitCollection *traitCollection);
     #endif
 #endif
 
-#define AddThemeProvider(object, block) \
+#define AddThemeProviderWithTraitCollection(object, block) \
+{\
 @weakify(object);\
 [object addThemeProvider:^(DDTraitCollection * _Nonnull traitCollection) {\
     @strongify(object)\
@@ -55,6 +56,19 @@ typedef void (^DDThemeProvider)(DDTraitCollection *traitCollection);
         block(traitCollection);\
     }\
 }];\
+}\
+
+#define AddThemeProvider(object, block) \
+{\
+@weakify(object);\
+[object addThemeProvider:^(DDTraitCollection * _Nonnull traitCollection) {\
+    @strongify(object)\
+    if (!object) return;\
+    if (block) {\
+        block();\
+    }\
+}];\
+}\
 
 @interface NSObject (Theme)
 

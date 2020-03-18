@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSObject+Theme.h"
+#import "DDThemeKit.h"
 
 @interface ViewController ()
 
@@ -18,14 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    AddThemeProvider(self, ^(DDTraitCollection * _Nonnull traitCollection) {
-        if (traitCollection.userInterfaceStyle == DDUserInterfaceStyleLight) {
-            self.view.backgroundColor = [UIColor whiteColor];
-        } else {
-            self.view.backgroundColor = [UIColor blackColor];
-        }
-    });
 }
 
 @end
